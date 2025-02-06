@@ -1,38 +1,193 @@
-.App {
+.container {
+  background-image: url('https://wallpapercave.com/wp/wp2291116.jpg');
+  background-size: cover;
+  width: 100vw;
+  padding: 15px;
+  height:100vh;
+  
+}
+.inner-container{
+    position: scroll;
+}
+.heading {
+  color: black;
+  font-family: 'Caveat';
+  font-size: 25px;
+  font-weight: bold;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.span_head {
+  color: rgb(224, 14, 161);
+  font-family: "Cursive";
+  font-size: 30px;
+  font-weight: bold;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.description {
+  color: black;
+  font-family: "Bree Serif";
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px;
+  
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: bold;
+  opacity: 0.6;
+  background-color:#FEC8D8;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px BLACK;
+    
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+  
+  
+  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.head {
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+.all_boxes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+}
+.box {
+  width: 300px;
+  height: 150px;
+  padding: 5px;
+  margin: 10px;
+  opacity: 0.5;
+  background-color:#FEC8D8;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px BLACK;
+}
+.box:hover{
+    transform: rotate(-3deg);
+    transition: 1s;
+    cursor: pointer;
+}
+.span_text {
+  color: black;
+  font-weight: bold;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 0.3fr);
+
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.letter {
+  width: 40px;
+  height: 40px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.5rem;
+  border: 2px solid rgb(206, 197, 200);
+}
+.input_field{
+    
+display: flex;
+flex-direction: row;
+justify-content: center;
+
+}
+.input-text{
+ 
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: bold;
+  opacity: 0.8;
+  background-color:#FEC8D8;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px BLACK;
+    
+    letter-spacing: 2px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width:500px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+
+
 }
 
-.App-link {
-  color: #61dafb;
+.green {
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.yellow {
+  background-color: yellow;
+}
+
+.gray {
+  background-color: gray;
+}
+
+/* Additional styling (Optional) */
+.button {
+    width: 300px;
+  height:40px;
+  margin-top: 10px;
+  padding: 5px;
+  font-weight: bold;
+  opacity: 0.6;
+  background-color:#FEC8D8;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 5px BLACK;
+text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    width:150px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button:hover {
+    background-color: rgb(145, 7, 92);
+    color: #050801;
+
+}
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.attempts-text{
+color:rgb(145, 7, 92);
+font-weight: bold;
+text-transform: uppercase;
+
+}
+.error-msg{
+color:rgb(143, 28, 28);
+font-size: 20px;
+text-transform: capitalize;
+font-weight: bold;
+}
+
+.word-text{
+    color:#2b1a07;
+    font-size: 20px;
+}
+
+.success-msg{
+    
+color:rgb(145, 7, 92);
+font-size: 20px;
+text-transform: capitalize;
+font-weight: bold;
+
 }
